@@ -33,6 +33,7 @@ public class Example1
 		ResponseBody rbo=res.getBody();
 		String rb=rbo.asString();
 		System.out.println("response body is:\n"+rb);
+		
 	}
 
 }

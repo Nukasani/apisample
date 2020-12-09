@@ -15,11 +15,11 @@ public class Example3
 	{
 		//one path parameter for request and response in html
 		 //create Http request
-		RestAssured.baseURI="https://www.lipsum.com/hindi";
+		RestAssured.baseURI="https://petstore.swagger.io/v2/store/order/id";
 		RequestSpecification req=RestAssured.given();
 		 
 		//request with http method and with one parameter
-		Response res=req.request(Method.GET,"");
+		Response res=req.request(Method.GET,"1");
 		
 		//analyse response
 		String rsl=res.getStatusLine();
